@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["gate.js"],
+      "matches": [
+        "https://eq.hsc.gov.ua/site/index",
+        "https://eq.hsc.gov.ua/site/step_pe"
+      ]
+    },
+    {
+      "js": ["background.js"],
+      "matches": [
+        "https://eq.hsc.gov.ua/site/step2?chdate=2024-03-01&question_id=55&id_es="
+      ]
+    },
+    {
+      "js": ["weekend-background.js"],
+      "matches": [
+        "https://eq.hsc.gov.ua/site/step2?chdate=2024-03-02&question_id=55&id_es=",
+        "https://eq.hsc.gov.ua/site/step2?chdate=2024-03-09&question_id=55&id_es="
+      ]
+    },
+    {
+      "js": ["submit-background.js"],
+      "matches": ["https://eq.hsc.gov.ua/site/step3/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["sound.mp3", "found-sound.mp3", "gate.mp3"],
+      "matches": ["https://eq.hsc.gov.ua/*"]
+    }
+  ]
+}
