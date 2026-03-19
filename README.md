@@ -1,10 +1,10 @@
 # Chrome extension. "TSC" ticket time search
 
-At the time when I was trying to get my driving license it was very hard to find a ticket for driving exam. When these would come out they would be sold out in minutes.
+At the time when I was trying to get my driving license, it was very hard to find a ticket for driving exam. When these would come out they would be sold out in minutes.
 
 ## How it worked
-This was my lasy solution to have instead of refreshing the page myself.
+This was my lazy solution to have instead of refreshing the page myself.
 
-It was mimicing my behavior: refreshing the page, checking if there were tickets at my target office at the target timeframe and filling in the form. 
+It was mimicking my behavior: refreshing the page, checking if there were tickets at my target office at the target timeframe and filling in the form. 
 
-If there was a successful find it would play a sound for me to check and send the form.
+If there was a successful find, it would play a sound for me to check and send the form.
